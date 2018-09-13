@@ -6,17 +6,16 @@ public class MyFirstProgram {
         hello("user");
         hello("Vladimir");
 
-        double l = 5;
-        System.out.println("Площадь квадрата со стороной " + l + " = " + area(l));
 
-        double a = 4;
-        double b = 6;
-        System.out.println("Площадь прямоугодьника со сторонами " + a + " и " + b + " = " + area(a, b));
+       Square s = new Square(5);
+        System.out.println("Площадь квадрата со стороной " + s.l + " = " + area(s));
 
-        double q = 5;
-        double w = 5;
-        double e = 5;
-        System.out.println("Площадь куба со сторонами " + q + " , " + w + " и " + e + " = " + area(q, w, e));
+        Rectangle r = new Rectangle (4, 6);
+        System.out.println("Площадь прямоугодьника со сторонами " + r.a + " и " + r.b + " = " + area(r));
+
+
+        Cube c = new Cube (5, 5, 5);
+        System.out.println("Площадь куба со сторонами " + c.q + " , " + c.w + " и " + c.e + " = " + area(c));
 
     }
 
@@ -26,17 +25,17 @@ public class MyFirstProgram {
 
     }
 
-    public static double area(double len) {
-        return len * len;
+    public static double area(Square s) {
+        return s.l * s.l;
     }
 
-    public static double area(double a, double b){
-        return a * b;
+    public static double area(Rectangle r){
+        return r.a * r.b;
 
     }
 
-    public static double area(double q, double w, double e){
-        return q * w * e;
+    public static double area(Cube c){
+        return c.q * c.w * c.e;
     }
 
 }
