@@ -13,6 +13,11 @@ public class MyFirstProgram {
         double b = 6;
         System.out.println("Площадь прямоугодьника со сторонами " + a + " и " + b + " = " + area(a, b));
 
+        double q = 5;
+        double w = 5;
+        double e = 5;
+        System.out.println("Площадь куба со сторонами " + q + " , " + w + " и " + e + " = " + area(q, w, e));
+
     }
 
     public static void hello(String somebody) {
@@ -28,6 +33,10 @@ public class MyFirstProgram {
     public static double area(double a, double b){
         return a * b;
 
+    }
+
+    public static double area(double q, double w, double e){
+        return q * w * e;
     }
 
 }
