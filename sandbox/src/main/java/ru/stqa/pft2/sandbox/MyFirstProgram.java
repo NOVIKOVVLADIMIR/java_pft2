@@ -7,15 +7,15 @@ public class MyFirstProgram {
         hello("Vladimir");
 
 
-       Square s = new Square(5);
-        System.out.println("Площадь квадрата со стороной " + s.l + " = " + area(s));
+        Square s = new Square(5);
+        System.out.println("Площадь квадрата со стороной " + s.l + " = " + s.area());
 
-        Rectangle r = new Rectangle (4, 6);
-        System.out.println("Площадь прямоугодьника со сторонами " + r.a + " и " + r.b + " = " + area(r));
+        Rectangle r = new Rectangle(4, 6);
+        System.out.println("Площадь прямоугодьника со сторонами " + r.a + " и " + r.b + " = " + r.area());
 
 
-        Cube c = new Cube (5, 5, 5);
-        System.out.println("Площадь куба со сторонами " + c.q + " , " + c.w + " и " + c.e + " = " + area(c));
+        Cube c = new Cube(5, 5, 5);
+        System.out.println("Площадь куба со сторонами " + c.q + " , " + c.w + " и " + c.e + " = " + c.area());
 
     }
 
@@ -25,17 +25,7 @@ public class MyFirstProgram {
 
     }
 
-    public static double area(Square s) {
-        return s.l * s.l;
-    }
 
-    public static double area(Rectangle r){
-        return r.a * r.b;
 
     }
 
-    public static double area(Cube c){
-        return c.q * c.w * c.e;
-    }
-
-}

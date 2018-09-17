@@ -11,4 +11,8 @@ public class Cube {
         this.e = e;
 
     }
+
+    public double area() {
+        return this.q * this.w * this.e;
+}
 }
